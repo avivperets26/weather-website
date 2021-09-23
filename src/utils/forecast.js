@@ -19,8 +19,11 @@ const forecast = (latitude, longitude, callback) => {
         body.current.weather_descriptions[0] +
           ". It is currently " +
           body.current.temperature +
-          " dagrees out, it feels like " +
-          body.current.feelslike
+          " dagrees out, This high today is " +
+          body.current.feelslike +
+          " dagrees with a low of " +
+          body.current.humidity +
+          "% Humidity."
       );
     }
   });
